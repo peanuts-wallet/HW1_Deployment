@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>22100122 김세현 학부생 style2.html화면.</title>
+
+    <style>
+        div h1, div h2, div h3 {
+            color: green;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li a {
+            text-decoration: none;
+            color: white;
+            width: 165px;
+            float: left;
+            background-color: #555555;
+            margin: 4px;
+            padding: 2px;
+            text-align: center;
+            display: block; /* 링크가 블록처럼 동작하도록 설정 */
+        }
+        ul li a:hover {
+            background-color: #000000;
+        }
+        #sheet3 {
+            background-color: green;
+        }
+        #content {
+            margin-top: 60px;
+        }
+        .link {
+            color: black;
+        }
+        .link:hover {
+            color: green;
+        }
+        #side_bar {
+            border: 1px solid darkgray;
+            margin-top: 15px;
+            background-color: gainsboro;
+            padding-left: 8px;
+            padding: 1px 0px 2px 10px;
+        }
+        #footer {
+            padding: 0px 15px 0px 15px;
+            font-size: 10px;
+            text-align: center;
+        }
+    </style>
+</head> 
+<body>
+    <div> <!--header-->
+        <h1>Welcome to 김세현's Homepage (22100122)</h1>
+        <p>Use the menu to select different Stylesheets</p>
+    </div>
+    <div id="menubar">
+        <ul>
+            <li><a class="list" href="style1.html">Stylesheet 1</a></li>
+            <li><a class="list" href="style2.html">Stylesheet 2</a></li>
+            <li><a id="sheet3" class="list" href="#">Stylesheet 3</a></li>
+            <li><a class="list" href="#">Stylesheet 4</a></li>
+            <li><a class="list" href="index.html">No Stylesheet</a></li>
+        </ul>
+    </div>
+    <div id="content"> <!--content-->
+        <h1>Same Page Different Stylesheets</h1>
+        <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</p>
+        <a class="link" href="style1.html">Stylesheet 1</a>
+        <a class="link" href="style2.html">Stylesheet 2</a>
+        <a class="link" href="#">Stylesheet 3</a>
+        <a class="link" href="#">Stylesheet 4</a>
+        <h2>No Styles</h2>
+        <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:</p>   
+        <a class="link" href="index.html">No Stylesheet</a>
+    </div>
+    <div id="side_bar"> <!--side_bar-->
+        <h3>Side-Bar</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+    <div id="footer"> <!--footer-->
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+    </div>
+</body>
+</html>

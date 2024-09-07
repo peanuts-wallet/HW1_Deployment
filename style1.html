@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22100122 김세현 학부생 style1.html화면.</title>
+
+    <style>
+        #header {
+            background-color: #04AA6D;
+            color: aliceblue;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+
+        #header p {
+            margin-top: -25px;
+            padding-bottom: 15px;
+        }
+
+        #main {
+           
+            height: 330px; 
+            width: 100%;
+            display: flex; 
+        }
+        
+        #left {
+            width: 170px;
+            height: auto;
+        }
+
+        #left ul {
+            list-style-type: none; /* 리스트 점 제거 */
+            padding: 0; /* 기본 패딩 제거 */
+            margin: 0; /* 기본 마진 제거 */
+            height: 300px;
+        }
+
+        #left ul #first {
+            background-color: #04AA6D;
+        }
+
+        #left li {
+            border: 1px solid gray;
+            padding: 5px; /* 항목 내부 여백 추가 */
+            padding-bottom: 15px;
+            margin: 4px 0; /* 수직 간격 조정, 왼쪽 마진 */
+            background-color: gainsboro; 
+            border-radius: 5px; /* 항목 모서리 둥글게 설정 */
+            height: 15px;
+            width: 150px;
+        }
+
+        #left a {
+            color: black;  
+            text-decoration: none; /* 링크 밑줄 제거 */
+            display: block;     /* 링크를 블록처럼*/
+        }
+
+        #left li:hover {
+            background-color: white;
+        }
+
+        #first a {
+            font-weight: bold;
+            color: white;
+        }
+
+        #content {
+            padding: 0px 0px 0px 10px;
+            flex: 1;        /* 나머지 공간을 차지하도록 설정 */
+        }
+
+        .link {
+            color: black;
+        }
+
+        #side_bar {
+            padding: 20px 15px 0px 10px;
+            color: white;
+            border-radius: 6px;
+            width: 200px;
+            height: 300px;
+            background-color: rgb(65, 171, 233);
+        }
+
+        #side_bar p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: left;
+        }
+
+        #footer {
+            border: 1px solid #d4d4d4;
+            text-align: center;
+            background-color: gainsboro;
+            line-height: 14px;
+            height: 60px;
+            font-size: 14px;
+            border-radius: 6px;
+            padding: 0px 0px 0px 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header"> <!--header-->
+        <h1>Welcome to 김세현's Homepage (22100122)</h1>
+        <p>Use the menu to select different Stylesheets</p>
+    </div>
+
+    <div id="main"> <!--main-->
+       <div id="left"> <!--left-->
+        <ul>
+            <li id="first"><a href="style1.html">Stylesheet1</a></li>
+            <li class="list"><a href="style2.html">Stylesheet2</a></li>
+            <li class="list"><a href="#">Stylesheet3</a></li>
+            <li class="list"><a href="#">Stylesheet4</a></li>
+            <li class="list"><a href="index.html">No Stylesheet</a></li>
+        </ul>
+       </div>
+       <div id="content"> <!--content-->
+        <h1>Same Page Different Stylesheets</h1>
+        <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</p>
+        <a class="link" href="style1.html">Stylesheet 1</a>
+        <a class="link" href="style2.html">Stylesheet 2</a>
+        <a class="link" href="#">Stylesheet 3</a>
+        <a class="link" href="#">Stylesheet 4</a>
+        <h1>No Styles</h1>
+        <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:</p>
+        <a class="link" href="index.html">No Stylesheet</a>
+       </div>
+       <div id="side_bar"> <!--side_bar-->
+        <h2>Side-Bar</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+       </div>
+    </div>
+    <div id="footer">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+
+    </div>
+</body>
+</html>

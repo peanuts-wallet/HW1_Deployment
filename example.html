@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>22100122 김세현학부생 example.html화면.</title>
+    
+    <style>
+      body {
+        background-color: #001f3f; 
+        color: #ffffff; 
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        text-align: left;
+        }
+
+      .container {
+        flex: 1;
+        display: flex;
+        justify-content: center;   /* 가로 가운데 정렬 */
+        text-align: left;         /* 텍스트 가운데 정렬 */
+      }
+      .title {
+        font-size: 45px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      #link {
+        color: burlywood;
+      }
+      .content {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 16px;
+      }
+      .footer {
+        background-color: rgb(44, 38, 38); 
+        color: #ffffff; 
+        font-weight: bold;
+        height: 40px;
+      }
+    </style>
+ 
+</head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="title">Sticky footer</h1>
+        <p class="content">Pin a footer to the bottom of the viewport in desktop browsers with this <br>custom HTML and CSS.</p>
+        <p>Use <a href="#" id="link">the sticky footer with a fixed navbar</a> if need be, too.</p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Place sticky footer content here.</p>
+      </div>
+    </footer>
+  </body>
+</html>
